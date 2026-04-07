@@ -1,0 +1,175 @@
+{
+  "buildId": "build-et-152805-mno858d65o4z",
+  "tenderId": "et-152805",
+  "tenderRef": "FORMAL TENDER: TD 01/04/2026",
+  "name": "FORMAL_TENDER__TD_01_04_2026__AUTOMATED_PERFORMANCE_MANAGEMENT_SYSTEM_FOR_A_PERI",
+  "architecture": {
+    "name": "municipal-performance-management-system",
+    "description": "Comprehensive automated performance management system for South African municipal operations to track, analyze, and manage organizational KPIs, departmental metrics, and compliance standards over a 3-year implementation period",
+    "stack": {
+      "backend": "Node.js/Express",
+      "frontend": "React + TailwindCSS",
+      "database": "PostgreSQL",
+      "ai": "Claude API integration for performance insights and compliance assistant"
+    },
+    "modules": [
+      {
+        "name": "dashboard",
+        "purpose": "Executive dashboard with real-time KPI visualization and municipal performance overview",
+        "files": [
+          "src/components/Dashboard.js",
+          "src/services/dashboardService.js"
+        ]
+      },
+      {
+        "name": "kpi-management",
+        "purpose": "Define, configure, and manage municipal KPIs across departments",
+        "files": [
+          "src/components/KPIManagement.js",
+          "src/models/KPI.js"
+        ]
+      },
+      {
+        "name": "data-collection",
+        "purpose": "Automated data collection from municipal systems and manual data entry",
+        "files": [
+          "src/services/dataCollector.js",
+          "src/components/DataEntry.js"
+        ]
+      },
+      {
+        "name": "reporting",
+        "purpose": "Generate statutory reports, performance reports, and compliance documentation",
+        "files": [
+          "src/components/ReportGenerator.js",
+          "src/services/reportService.js"
+        ]
+      },
+      {
+        "name": "user-management",
+        "purpose": "Role-based access control for municipal staff and external stakeholders",
+        "files": [
+          "src/components/UserManagement.js",
+          "src/middleware/auth.js"
+        ]
+      },
+      {
+        "name": "compliance-tracking",
+        "purpose": "Track municipal compliance with regulations and performance standards",
+        "files": [
+          "src/components/ComplianceTracker.js",
+          "src/services/complianceService.js"
+        ]
+      },
+      {
+        "name": "notifications",
+        "purpose": "Automated alerts for performance thresholds, deadlines, and compliance issues",
+        "files": [
+          "src/services/notificationService.js",
+          "src/components/Notifications.js"
+        ]
+      },
+      {
+        "name": "audit-trail",
+        "purpose": "Comprehensive logging and audit trail for all system activities",
+        "files": [
+          "src/services/auditService.js",
+          "src/models/AuditLog.js"
+        ]
+      }
+    ],
+    "apiEndpoints": [
+      {
+        "method": "GET",
+        "path": "/api/dashboard/overview",
+        "description": "Get municipal performance overview with key metrics"
+      },
+      {
+        "method": "POST",
+        "path": "/api/kpis",
+        "description": "Create new KPI definition"
+      },
+      {
+        "method": "PUT",
+        "path": "/api/kpis/:id",
+        "description": "Update KPI configuration or targets"
+      },
+      {
+        "method": "GET",
+        "path": "/api/kpis/department/:dept",
+        "description": "Get KPIs for specific municipal department"
+      },
+      {
+        "method": "POST",
+        "path": "/api/data/collect",
+        "description": "Submit performance data collection"
+      },
+      {
+        "method": "GET",
+        "path": "/api/reports/generate/:type",
+        "description": "Generate specific report type (quarterly, annual, compliance)"
+      },
+      {
+        "method": "GET",
+        "path": "/api/compliance/status",
+        "description": "Get current compliance status across all areas"
+      },
+      {
+        "method": "POST",
+        "path": "/api/users",
+        "description": "Create new user account with role assignment"
+      },
+      {
+        "method": "GET",
+        "path": "/api/notifications/pending",
+        "description": "Get pending notifications for current user"
+      },
+      {
+        "method": "GET",
+        "path": "/api/audit/trail/:entity",
+        "description": "Get audit trail for specific entity or action"
+      }
+    ],
+    "features": [
+      "Real-time municipal KPI tracking",
+      "Automated performance data collection",
+      "Customizable departmental dashboards",
+      "Statutory compliance monitoring",
+      "Multi-level user access control",
+      "Automated report generation",
+      "Performance trend analysis",
+      "Alert system for performance thresholds",
+      "CSD registration compliance tracking",
+      "Mobile-responsive interface",
+      "Data export capabilities",
+      "Integration with existing municipal systems",
+      "Performance benchmarking",
+      "Goal setting and tracking",
+      "Audit trail and logging"
+    ],
+    "aiChatbot": {
+      "purpose": "AI-powered performance management assistant to help municipal staff understand KPIs, compliance requirements, and system guidance",
+      "capabilities": [
+        "Explain KPI calculations and interpretations",
+        "Provide guidance on municipal compliance standards",
+        "Assist with report generation and interpretation",
+        "Answer questions about performance trends",
+        "Help with system navigation and feature usage",
+        "Suggest performance improvement strategies",
+        "Provide regulatory update information",
+        "Generate executive summaries of performance data"
+      ]
+    }
+  },
+  "files": [
+    "package.json",
+    "src/server.js",
+    "public/index.html",
+    "src/chatbot.js",
+    "src/database.js"
+  ],
+  "similarProjects": [],
+  "builtAt": "2026-04-07T06:16:17.835Z",
+  "status": "complete",
+  "buildDir": "/home/kabelo/tender-engine/data/builds/build-et-152805-mno858d65o4z"
+}
